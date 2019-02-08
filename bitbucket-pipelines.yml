@@ -13,7 +13,7 @@ definitions:
           - gradle
           - sonar
         script:
-          - ./gradlew build sonarqube
+          - ./gradlew build sonarqube -Dsonar.projectKey=sonarsource_sample-gradle-project -Dsonar.organization=sonarsource-bitbucket
         artifacts:
           - build/libs/**
           
